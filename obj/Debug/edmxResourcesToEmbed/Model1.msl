@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Database1ModelStoreContainer" CdmEntityContainer="Database1Entities">
+    <EntitySetMapping Name="Detalle">
+      <EntityTypeMapping TypeName="Database1Model.Detalle">
+        <MappingFragment StoreEntitySet="Detalle">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="MensajeCorto" ColumnName="MensajeCorto" />
+          <ScalarProperty Name="Mensaje" ColumnName="Mensaje" />
+          <ScalarProperty Name="EnviadoPor" ColumnName="EnviadoPor" />
+          <ScalarProperty Name="Para" ColumnName="Para" />
+          <ScalarProperty Name="FechaIngreso" ColumnName="FechaIngreso" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="CantidadLikes" ColumnName="CantidadLikes" />
+          <ScalarProperty Name="CantidadViews" ColumnName="CantidadViews" />
+          <ScalarProperty Name="Relacion" ColumnName="Relacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Principal">
+      <EntityTypeMapping TypeName="Database1Model.Principal">
+        <MappingFragment StoreEntitySet="Principal">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="FechaIngreso" ColumnName="FechaIngreso" />
+          <ScalarProperty Name="CantidadMensajes" ColumnName="CantidadMensajes" />
+          <ScalarProperty Name="FechaUltimaActualizacion" ColumnName="FechaUltimaActualizacion" />
+          <ScalarProperty Name="CantidadLikes" ColumnName="CantidadLikes" />
+          <ScalarProperty Name="CantidadViews" ColumnName="CantidadViews" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="ppInsertDetalle" FunctionName="Database1Model.Store.ppInsertDetalle" />
+    <FunctionImportMapping FunctionImportName="ppUpsertPrincipal" FunctionName="Database1Model.Store.ppUpsertPrincipal" />
+  </EntityContainerMapping>
+</Mapping>

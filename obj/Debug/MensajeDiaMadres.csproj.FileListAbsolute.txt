@@ -1,0 +1,14 @@
+C:\Users\user\Documents\Universidad\7mo trimestre (Mayo-Julio)\Desarrollo de Software 3 (Lab)\MensajeDiaMadres\bin\Debug\Database1.mdf
+C:\Users\user\Documents\Universidad\7mo trimestre (Mayo-Julio)\Desarrollo de Software 3 (Lab)\MensajeDiaMadres\bin\Debug\Database1_log.ldf
+C:\Users\user\Documents\Universidad\7mo trimestre (Mayo-Julio)\Desarrollo de Software 3 (Lab)\MensajeDiaMadres\bin\Debug\MensajeDiaMadres.exe.config
+C:\Users\user\Documents\Universidad\7mo trimestre (Mayo-Julio)\Desarrollo de Software 3 (Lab)\MensajeDiaMadres\bin\Debug\MensajeDiaMadres.exe
+C:\Users\user\Documents\Universidad\7mo trimestre (Mayo-Julio)\Desarrollo de Software 3 (Lab)\MensajeDiaMadres\bin\Debug\MensajeDiaMadres.pdb
+C:\Users\user\Documents\Universidad\7mo trimestre (Mayo-Julio)\Desarrollo de Software 3 (Lab)\MensajeDiaMadres\bin\Debug\EntityFramework.dll
+C:\Users\user\Documents\Universidad\7mo trimestre (Mayo-Julio)\Desarrollo de Software 3 (Lab)\MensajeDiaMadres\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user\Documents\Universidad\7mo trimestre (Mayo-Julio)\Desarrollo de Software 3 (Lab)\MensajeDiaMadres\bin\Debug\EntityFramework.xml
+C:\Users\user\Documents\Universidad\7mo trimestre (Mayo-Julio)\Desarrollo de Software 3 (Lab)\MensajeDiaMadres\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\user\Documents\Universidad\7mo trimestre (Mayo-Julio)\Desarrollo de Software 3 (Lab)\MensajeDiaMadres\obj\Debug\MensajeDiaMadres.csproj.AssemblyReference.cache
+C:\Users\user\Documents\Universidad\7mo trimestre (Mayo-Julio)\Desarrollo de Software 3 (Lab)\MensajeDiaMadres\obj\Debug\MensajeDiaMadres.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\Universidad\7mo trimestre (Mayo-Julio)\Desarrollo de Software 3 (Lab)\MensajeDiaMadres\obj\Debug\MensajeD.FFED8101.Up2Date
+C:\Users\user\Documents\Universidad\7mo trimestre (Mayo-Julio)\Desarrollo de Software 3 (Lab)\MensajeDiaMadres\obj\Debug\MensajeDiaMadres.exe
+C:\Users\user\Documents\Universidad\7mo trimestre (Mayo-Julio)\Desarrollo de Software 3 (Lab)\MensajeDiaMadres\obj\Debug\MensajeDiaMadres.pdb

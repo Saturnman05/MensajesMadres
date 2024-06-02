@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Database1Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Detalle">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Codigo" Type="int" Nullable="false" />
+    <Property Name="MensajeCorto" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Mensaje" Type="text" Nullable="false" />
+    <Property Name="EnviadoPor" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="Para" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="FechaIngreso" Type="datetime" Nullable="false" />
+    <Property Name="Estado" Type="int" Nullable="false" />
+    <Property Name="CantidadLikes" Type="int" Nullable="false" />
+    <Property Name="CantidadViews" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="Relacion" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Principal">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Codigo" Type="int" Nullable="false" />
+    <Property Name="Descripcion" Type="text" Nullable="false" />
+    <Property Name="FechaIngreso" Type="datetime" Nullable="false" />
+    <Property Name="CantidadMensajes" Type="int" Nullable="false" />
+    <Property Name="FechaUltimaActualizacion" Type="datetime" Nullable="false" />
+    <Property Name="CantidadLikes" Type="int" Nullable="false" />
+    <Property Name="CantidadViews" Type="int" Nullable="false" />
+  </EntityType>
+  <Function Name="ppInsertDetalle" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Codigo1" Type="int" Mode="In" />
+    <Parameter Name="MensajeCorto" Type="nvarchar" Mode="In" />
+    <Parameter Name="Mensaje" Type="text" Mode="In" />
+    <Parameter Name="EnviadoPor" Type="nvarchar" Mode="In" />
+    <Parameter Name="Para" Type="nvarchar" Mode="In" />
+    <Parameter Name="Relacion" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ppUpsertPrincipal" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Codigo" Type="int" Mode="In" />
+    <Parameter Name="Descripcion" Type="text" Mode="In" />
+  </Function>
+  <EntityContainer Name="Database1ModelStoreContainer">
+    <EntitySet Name="Detalle" EntityType="Self.Detalle" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Principal" EntityType="Self.Principal" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

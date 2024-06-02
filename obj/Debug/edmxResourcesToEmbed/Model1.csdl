@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Database1Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Detalle">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Codigo" Type="Int32" Nullable="false" />
+    <Property Name="MensajeCorto" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Mensaje" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EnviadoPor" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Para" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FechaIngreso" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Estado" Type="Int32" Nullable="false" />
+    <Property Name="CantidadLikes" Type="Int32" Nullable="false" />
+    <Property Name="CantidadViews" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Relacion" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Principal">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Codigo" Type="Int32" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FechaIngreso" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CantidadMensajes" Type="Int32" Nullable="false" />
+    <Property Name="FechaUltimaActualizacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CantidadLikes" Type="Int32" Nullable="false" />
+    <Property Name="CantidadViews" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="Database1Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Detalle" EntityType="Self.Detalle" />
+    <EntitySet Name="Principal" EntityType="Self.Principal" />
+    <FunctionImport Name="ppInsertDetalle">
+      <Parameter Name="Codigo1" Mode="In" Type="Int32" />
+      <Parameter Name="MensajeCorto" Mode="In" Type="String" />
+      <Parameter Name="Mensaje" Mode="In" Type="String" />
+      <Parameter Name="EnviadoPor" Mode="In" Type="String" />
+      <Parameter Name="Para" Mode="In" Type="String" />
+      <Parameter Name="Relacion" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="ppUpsertPrincipal">
+      <Parameter Name="Codigo" Mode="In" Type="Int32" />
+      <Parameter Name="Descripcion" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+</Schema>
